@@ -1,0 +1,32 @@
+.item-container {
+    height: 15rem;
+    border: 1px solid #d2c7c7;
+    padding: 1rem;
+    width: 26rem;
+    margin-bottom: 2rem;
+
+    .img-size {
+        height: 13rem;
+        width: 3rem;
+    }
+
+    .item-name {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    .star-nonfill {
+        width:2rem;
+        float: right;
+        height: 2rem;
+        fill: white;
+        display: -webkit-box;
+        & polygon {
+            stroke:  green;
+        }
+    }
+    .star-fill {
+        fill: green;
+    }
+}
+

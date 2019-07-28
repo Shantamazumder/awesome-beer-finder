@@ -1,0 +1,17 @@
+.header-bg {
+    background-color: #02bfa0;
+    height: 4rem;
+    color: white;
+    .header-title {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .header-element {
+        padding-top: 1rem;
+        cursor: pointer;
+    }
+   .text-link{
+       color: white;
+       text-decoration: none;
+   }
+}
