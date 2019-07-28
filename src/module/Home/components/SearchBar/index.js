@@ -8,7 +8,7 @@ export class SearchBar extends Component {
         return (
             <div className="sidebarContent">
                <div><input className="searchInput"/></div>
-                <Button variant="primary" size="lg">Left</Button>
+                <Button variant="primary" size="lg">Search</Button>
             </div>
          
         )
