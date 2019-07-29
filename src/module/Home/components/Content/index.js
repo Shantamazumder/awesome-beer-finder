@@ -18,7 +18,6 @@ export class Content extends Component {
           .then(res => res.json())
           .then(
             (result) => {
-                console.log(result);
               this.setState({
                 items: result
               });
@@ -32,7 +31,7 @@ export class Content extends Component {
       }
 
       favItemClicked = (e) => {
-        if (this.state.favItem.indexOf(e) === -1) {
+        if (this.state.favItem.includes(e) === false) {
           this.setState(prevState => ({
             favItem: [...prevState.favItem, e]
           }), ()=>{
@@ -53,8 +52,7 @@ export class Content extends Component {
              <Row style={{paddingTop: '2rem'}}>
                  {this.state.items.map((i) => {
                     return <Col key={i.name} index={i} sm={4}>
-                      <Card item={i} favItemClicked={this.favItemClicked}
-                       deletedItem={this.deletedItem} favItemList ={this.state.favItem}/>
+                      <Card item={i} favItemClicked={this.favItemClicked}  favItemList ={this.state.favItem}/>
                      </Col>
                  })
                 }               
